@@ -98,6 +98,10 @@ a {
   text-decoration: none;
 }
 
+body .navigation-wrap div {
+  color: green !important;
+}
+
 .overlay {
   position: absolute;
   z-index: 1;
@@ -339,6 +343,10 @@ a {
   margin-right: 10px;
   border: solid 1px #8d8d8d;
   border-radius: 2px;
+}
+
+main {
+  min-height: calc(100vh - 600px);
 }
 
 .navigation-wrap {
@@ -1003,6 +1011,62 @@ section.text-img .inner-wrap .img {
   margin-left: 200px;
 }
 
+section.user-wrap .menu {
+  background: #6CCCCC;
+}
+
+section.user-wrap .menu .inner-wrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.user-wrap .menu .inner-wrap ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+  border-left: 1px #FFFFFF solid;
+}
+
+section.user-wrap .menu .inner-wrap ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 16px;
+}
+
+section.user-wrap .menu .inner-wrap ul li a img {
+  margin-right: 8px;
+}
+
+section.user-wrap .img-name {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 253px;
+}
+
+section.user-wrap .img-name .inner-wrap .img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(0, 80px);
+          transform: translate(0, 80px);
+}
+
 footer {
   background: #edf4fa;
   padding-top: 36px;
@@ -1074,12 +1138,12 @@ footer .footer-wrap .menu > ul li {
 footer .footer-wrap .menu > ul li .mail {
   margin: 12px 0 32px;
   display: block;
-  font: normal normal 200 18px/21px;
+  font-size: 18px;
   color: #262626;
 }
 
 footer .footer-wrap .menu > ul li h3 {
-  font: normal normal 300 20px/32px Sofia Pro;
+  font-size: 20px;
   color: #78DBDB;
   text-transform: uppercase;
 }
@@ -1104,7 +1168,7 @@ footer .footer-wrap .menu > ul li ul li {
 }
 
 footer .footer-wrap .menu > ul li ul li a {
-  font: normal normal 200 18px/21px;
+  font-size: 18px;
   color: #262626;
 }
 

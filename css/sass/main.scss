@@ -478,7 +478,9 @@ a {
 
 
 
-
+main{
+    min-height: calc(100vh - 600px);
+}
 
 .navigation-wrap{
     background: #FFFFFF;
@@ -1061,6 +1063,57 @@ section{
             }
         }
     }
+
+    &.user-wrap{
+        .menu{
+            background: #6CCCCC;
+            .inner-wrap{
+                ul{
+                    display: flex;
+                    li{
+                        flex: 1;
+                        list-style: none;
+                        border-left: 1px #FFFFFF solid;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #FFFFFF;
+                            font-size: 20px;
+                            text-transform: capitalize;
+                            padding: 16px;
+
+                            img{
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .img-name{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 253px;
+            .inner-wrap{
+                .img{
+                    width: 230px;
+                    height: 230px;
+                    border-radius: 50%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    transform: translate(0, 80px);
+                }
+
+                .name{
+
+                }
+            }
+        }
+    }
 }
 
 
@@ -1119,14 +1172,13 @@ footer{
                     .mail{
                         margin: 12px 0 32px;
                         display: block;
-                        font: normal normal 200 18px/21px;
+                        font-size: 18px;
                         color: #262626;
                     }
                     h3{
-                        font: normal normal 300 20px/32px Sofia Pro;
+                        font-size: 20px;
                         color: #78DBDB;
                         text-transform: uppercase;
-                        
                     }
 
                     ul{
@@ -1146,31 +1198,30 @@ footer{
 
                         li{
                             margin-top: 12px;
-                            a{
-                                font: normal normal 200 18px/21px;
+                            a{ 
+                                font-size: 18px;
                                 color: #262626;
                             }
- 
                         }
                     }
                 }
             }
         }
-
     }
-            .terms{
-                margin-top: 32px;
-                ul{
-                    display: flex;
-                    justify-content: center;
-                    border-top: 1px solid #9A9A9A;
-                    padding: 16px 0;
-                    li{
-                        list-style: none;
-                        margin: 0 12px;
-                    }
-                }
+
+    .terms{
+        margin-top: 32px;
+        ul{
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #9A9A9A;
+            padding: 16px 0;
+            li{
+                list-style: none;
+                margin: 0 12px;
             }
+        }
+    }
 }
 
 
